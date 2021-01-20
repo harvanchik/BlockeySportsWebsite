@@ -5,17 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blockey Sports</title>
+    <!-- Styles -->
     <link rel="stylesheet" href="./assets/css/dist.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4f831b6978.js" crossorigin="anonymous"></script>
+    <script>
+        function toggleDarkMode() {
+            const className = document.querySelector('html').className;
+            document.querySelector('html').className = className === 'dark' ? '' : 'dark';
+        }
+        function toggleMenu() {
+            const menu = document.querySelector('#menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+    <!-- <style>
+        #menu-toggle:checked~#menu {
+            display: block;
+        }
+    </style> -->
 </head>
-<script>
-    function toggleDarkMode() {
-        const className = document.querySelector('html').className;
-        document.querySelector('html').className = className === 'dark' ? '' : 'dark';
-    }
-</script>
+
+
 
 <body id="body">
-    .
+    <header class="flex bg-gray-200 sm:px-5 sm:py-3">
+        <div class="container mx-auto sm:px-10 sm:flex sm:justify-between sm:items-center">
+            <div class="flex items-center justify-between px-5 py-3 sm:p-0">
+                <div>
+                    <img src="https://minecrafthockey.com/assets/images/logo.png"
+                         alt="logo"
+                         class="h-10">
+                </div>
+                <div class="sm:hidden">
+                    <button class="focus:outline-none" onclick="toggleMenu()">
+                        <i class="fas fa-bars fa-2x text-gray-700 hover:text-gray-900"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="menu" class="hidden px-3 pt-2 pb-4 sm:flex sm:p-0">
+                <a href="#" class="block px-2 py-1 text-gray-700 font-semibold rounded hover:bg-gray-100">Temp 2</a>
+                <a href="#" class="block px-2 py-1 mt-1 sm:mt-0 sm:ml-2 text-gray-700 font-semibold rounded hover:bg-gray-100">Temp 3</a>
+                <a href="#" class="block px-2 py-1 mt-1 sm:mt-0 sm:ml-2 text-gray-700 font-semibold rounded hover:bg-gray-100">Temp 1</a>
+            </div>
+        </div>
+
+
+    </header>
+    <main id="main"></main>
 </body>
 
 </html>
