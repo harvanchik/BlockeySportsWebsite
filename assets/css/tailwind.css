@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .my-div {
+    @apply w-16 h-16 text-white text-2xl font-extrabold rounded-md bg-purple-600 flex items-center justify-center
+    }
+}
